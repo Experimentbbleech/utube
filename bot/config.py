@@ -41,7 +41,7 @@ class Config:
 
     UPLOAD_MODE = os.environ.get("UPLOAD_MODE") or False
     if UPLOAD_MODE:
-        if UPLOAD_MODE.lower() in ["public"]:
+        if UPLOAD_MODE.lower() in ["private", "public", "unlisted"]:
             UPLOAD_MODE = UPLOAD_MODE.lower()
         else:
             UPLOAD_MODE = False
