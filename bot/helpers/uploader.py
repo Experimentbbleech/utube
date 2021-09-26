@@ -72,7 +72,7 @@ class Uploader:
                 + "\nUploaded to YouTube with https://tx.me/youtubeitbot"
             )[:5000]
             if not Config.UPLOAD_MODE:
-                privacyStatus = "public"
+                privacyStatus = "private"
             else:
                 privacyStatus = Config.UPLOAD_MODE
 
